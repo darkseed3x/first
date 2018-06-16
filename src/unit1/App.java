@@ -8,8 +8,11 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws IllegalAccessException {
+
         ArrayList<Person> persons = new ArrayList<>();
+
         try (BufferedReader reader = new BufferedReader(new FileReader("1"))){
+
             while (reader.ready()){
 
                 String str =reader.readLine().trim();
