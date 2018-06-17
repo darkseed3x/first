@@ -8,6 +8,7 @@ public class Task3 {
     private int x = 5;
     private String  asd = "sdfs";
     private int[] z = new int[]{1,2,3};
+    private Person  p = new Person("wer","werwr","werwer");
 
 
 
@@ -25,10 +26,11 @@ public class Task3 {
 
             Class typeOfField = f.getType();
 
+
             if((typeOfField.isPrimitive())|| (typeOfField == String.class)|| typeOfField.isArray())
                resault +=  "{ " + f.getName()+ " = " + f.get(object) + " }";
             else
-                toString(f.get(object));
+                resault += "\n" + toString(f.get(object));
             }
 
 

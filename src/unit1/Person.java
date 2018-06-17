@@ -9,6 +9,12 @@ public class Person {
 
     Person(){}
 
+    public Person(String firstName, String secondName, String lastName) {
+        FirstName = firstName;
+        SecondName = secondName;
+        LastName = lastName;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
