@@ -16,7 +16,7 @@ public class CustomScanner {
 
         ArrayList<Object> list = new ArrayList<>();
 
-        File folder = new File("C:\\Users\\admin\\IdeaProjects\\first\\src\\unit2\\ex");
+        File folder = new File(".\\src\\unit2\\ex");
         String[] listNames = folder.list();
 
         for (int i = 0; i < listNames.length; i++) {
