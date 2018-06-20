@@ -13,7 +13,7 @@ public class App {
 
         ArrayList<Person> persons = new ArrayList<>();
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("1"))){
+        try (BufferedReader reader = new BufferedReader(new FileReader(".\\src\\main\\resources\\1"))){
 
             while (reader.ready()){
 
